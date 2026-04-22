@@ -38,18 +38,18 @@ export const Footer = () => {
           {/* Contact Info */}
           <div className="flex-shrink-0 text-center md:text-left">
             <h4 className="font-sans text-xl font-bold text-neutral-900 mb-4">Contact</h4>
-            <ul className="flex flex-col items-center md:items-start space-y-4 text-base">
-              <li className="flex flex-row items-start md:items-start justify-center md:justify-start gap-3 text-neutral-500">
-                <MapPin className="w-5 h-5 text-primary-300 flex-shrink-0 mt-1.5" />
+            <ul className="flex flex-col items-start md:items-start space-y-4 text-base w-fit mx-auto md:mx-0">
+              <li className="flex flex-row items-start justify-start gap-2 text-neutral-500 text-left">
+                <MapPin className="w-5 h-5 text-primary-300 flex-shrink-0 mt-1" />
                 <a href="https://maps.app.goo.gl/yUeQEZtUtqrBdHts8?g_st=iw" target="_blank" rel="noopener noreferrer" className="hover:text-primary-300 transition-colors">
-                  opp to nayara petrol station,<br />Tanah Mampad, Nilambur 676542
+                  near nayara petrol station,<br />Tanah Mampad, Nilambur 676542
                 </a>
               </li>
-              <li className="flex flex-row items-center md:items-start justify-center md:justify-start gap-3 text-neutral-500">
+              <li className="flex flex-row items-center justify-start gap-2 text-neutral-500">
                 <Phone className="w-5 h-5 text-primary-300 flex-shrink-0" />
                 <a href="https://wa.me/919946223233" target="_blank" rel="noopener noreferrer" className="hover:text-primary-300 transition-colors">+91 9946223233</a>
               </li>
-              <li className="flex flex-row items-center md:items-start justify-center md:justify-start gap-3 text-neutral-500">
+              <li className="flex flex-row items-center justify-start gap-2 text-neutral-500">
                 <Mail className="w-5 h-5 text-primary-300 flex-shrink-0" />
                 <a href="mailto:tenderblissgroup@gmail.com" className="hover:text-primary-300 transition-colors">tenderblissgroup@gmail.com</a>
               </li>

@@ -75,24 +75,24 @@ export const ContactPage = () => {
           {/* Left Column: Contact info */}
           <div className="flex flex-col gap-10">
             {/* Email */}
-            <div className="flex items-start gap-6">
+            <div className="flex items-start gap-4 md:gap-6">
               <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center flex-shrink-0 shadow-sm border border-primary-100">
                 <Mail className="w-6 h-6 text-primary-300" />
               </div>
-              <div className="flex flex-col pt-1">
+              <div className="flex flex-col pt-4 min-w-0">
                 <p className="text-neutral-400 text-sm mb-1.5 uppercase tracking-wider font-semibold">Email</p>
-                <a href="mailto:tenderblissgroup@gmail.com" className="text-neutral-800 text-lg font-medium hover:text-primary-300 transition-colors">
+                <a href="mailto:tenderblissgroup@gmail.com" className="text-neutral-800 text-base md:text-lg font-medium hover:text-primary-300 transition-colors break-all">
                   tenderblissgroup@gmail.com
                 </a>
               </div>
             </div>
 
             {/* Phone */}
-            <div className="flex items-start gap-6">
+            <div className="flex items-start gap-4 md:gap-6">
               <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center flex-shrink-0 shadow-sm border border-primary-100">
                 <Phone className="w-6 h-6 text-primary-300" />
               </div>
-              <div className="flex flex-col pt-1">
+              <div className="flex flex-col pt-4">
                 <p className="text-neutral-400 text-sm mb-1.5 uppercase tracking-wider font-semibold">Call/WhatsApp</p>
                 <a href="https://wa.me/919946223233" target="_blank" rel="noopener noreferrer" className="text-neutral-800 text-lg font-medium hover:text-primary-300 transition-colors">
                   +91 9946223233
@@ -101,14 +101,14 @@ export const ContactPage = () => {
             </div>
 
             {/* Location */}
-            <div className="flex items-start gap-6">
+            <div className="flex items-start gap-4 md:gap-6">
               <div className="w-14 h-14 rounded-full bg-primary-50 flex items-center justify-center flex-shrink-0 shadow-sm border border-primary-100">
                 <MapPin className="w-6 h-6 text-primary-300" />
               </div>
-              <div className="flex flex-col pt-1">
+              <div className="flex flex-col pt-4">
                 <p className="text-neutral-400 text-sm mb-1.5 uppercase tracking-wider font-semibold">Location</p>
                 <a href="https://maps.app.goo.gl/yUeQEZtUtqrBdHts8?g_st=iw" target="_blank" rel="noopener noreferrer" className="text-neutral-800 text-lg font-medium leading-relaxed hover:text-primary-300 transition-colors">
-                  Opposite to Nayara Petrol Station,<br />
+                  Near Nayara Petrol Station,<br />
                   Tanah Mampad, Nilambur 676542
                 </a>
               </div>

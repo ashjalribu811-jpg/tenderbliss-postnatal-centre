@@ -153,7 +153,7 @@ export const PackagesPage = () => {
                     rel="noopener noreferrer"
                     className="w-full py-4 rounded-2xl bg-primary-300 text-white font-inter font-bold text-[14px] tracking-widest flex items-center justify-center gap-2 hover:bg-secondary-300 transition-all shadow-lg group shadow-primary-300/10"
                   >
-                    more details
+                    For More Details:
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
