@@ -6,14 +6,14 @@ import { SERVICES_DATA, CATEGORY_META } from '../data/servicesData';
 
 export const ServiceCategoryPage = () => {
   const { categorySlug } = useParams<{ categorySlug: string }>();
-  
+
   const meta = categorySlug ? CATEGORY_META[categorySlug] : null;
-  const treatments = meta 
+  const treatments = meta
     ? Object.values(SERVICES_DATA).filter(s => {
-        const cat = s.category.toUpperCase();
-        const target = meta.title.toUpperCase();
-        return cat === target || cat.includes(target) || target.includes(cat);
-      })
+      const cat = s.category.toUpperCase();
+      const target = meta.title.toUpperCase();
+      return cat === target || cat.includes(target) || target.includes(cat);
+    })
     : [];
 
   if (!meta) {
@@ -44,9 +44,9 @@ export const ServiceCategoryPage = () => {
                 className="bg-white rounded-[2.5rem] p-8 md:p-10 shadow-soft border border-neutral-100 flex flex-col md:flex-row gap-8 items-center"
               >
                 <div className="w-full md:w-1/3 aspect-square rounded-2xl overflow-hidden shrink-0 shadow-inner">
-                  <img 
-                    src={treatment.image} 
-                    alt={treatment.title} 
+                  <img
+                    src={treatment.image}
+                    alt={treatment.title}
                     className="w-full h-full object-cover object-center grayscale-[20%] hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
@@ -93,13 +93,13 @@ export const ServiceCategoryPage = () => {
                   Personalized Consultation
                 </li>
               </ul>
-              <a 
-                href="https://wa.me/919946223233?text=Hello,%20I'd%20like%20more%20details%20about%20your%20services." 
-                target="_blank" 
+              <a
+                href="https://wa.me/919946223233?text=Hello,%20I'd%20like%20more%20details%20about%20your%20services."
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button className="w-full py-6 text-base rounded-2xl shadow-primary-200 shadow-lg !text-white">
-                  more details
+                  For More Details
                 </Button>
               </a>
             </motion.div>
