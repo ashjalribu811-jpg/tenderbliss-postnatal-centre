@@ -8,27 +8,27 @@ import antistretchImg from '../assets/services/1000345091-01.jpeg';
 import facialImg from '../assets/services/1000345098-01.jpeg';
 import fertilityImg from '../assets/services/1000345150-01.jpeg';
 import antenatalImg from '../assets/services/1000345153-01.jpeg';
-import fibroidImg from '../assets/services/1000345159-01.jpeg';
-import cystImg from '../assets/services/1000345162-01.jpeg'
+import fibroidImg from '../assets/services/IMG-20260422-WA0016.jpg (1).jpeg';
+import cystImg from '../assets/services/IMG-20260422-WA0018.jpg.jpeg'
 import uttaravastiImg from '../assets/services/1000345207-02.jpeg';
 import stressImg from '../assets/services/1000345283-01.jpeg';
 import tummyImg from '../assets/services/1000345094-01.jpeg';
-import pcosImg from '../assets/services/1000345176-01.jpeg';
+import pcosImg from '../assets/services/IMG-20260422-WA0022.jpg.jpeg';
 import postnatalImg from '../assets/services/1000345156-01.jpeg';
 import endoImg from '../assets/services/1000345165-01.jpeg';
 import periodImg from '../assets/services/1000345173-01.jpeg';
-import hygieneImg from '../assets/services/1000345170-01.jpeg';
-import uterineImg from '../assets/services/1000345173-01.jpeg';
+import hygieneImg from '../assets/services/IMG-20260422-WA0020.jpg.jpeg';
+import uterineImg from '../assets/services/IMG-20260422-WA0021.jpg.jpeg';
 import pcosDetailImg from '../assets/services/pcos_detail.png';
-import pcosPainImg from '../assets/services/1000345176-01.jpeg';
-import wellnessExerciseImg from '../assets/services/1000345204-01.jpeg';
+import pcosPainImg from '../assets/services/IMG-20260422-WA0022.jpg.jpeg';
+import wellnessExerciseImg from '../assets/services/indian-woman-doing-kundalini-yoga-gathering-inner-energy-healing-great-holistic-health.jpg.jpeg';
 import abdominalBandageImg from '../assets/services/Abdominal-Bandage.jpg.jpeg';
 import podiKizhiImg from '../assets/services/Podi-kizhi.jpg.jpeg';
 import yogaImg from '../assets/services/yoga.jpg.jpeg';
 import keshadoopanamImg from '../assets/services/Keshadoopanam.jpg.jpeg';
 import padhabyangham from "../assets/services/1000345082-01.jpeg"
 import steambath from "../assets/services/1000345101-01.jpeg"
-import menopauseImg from "../assets/services/1000345197-01.jpeg"
+import menopauseImg from "../assets/services/IMG-20260422-WA0023.jpg.jpeg"
 
 export type CategoryType = 'GENERAL PACKAGES' | 'SPECIAL PACKAGES' | 'OUR SPECIALITIES' | 'EXCLUSIVE PACKAGE ON';
 
