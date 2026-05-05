@@ -5,7 +5,7 @@ export const ExpertCare = () => {
   return (
     <section className="py-24 bg-background-200">
       <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:pl-32">
           {/* Left: Doctor Image & Name */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
