@@ -4,6 +4,7 @@ import { Facilities } from '../components/sections/Facilities'
 import { WhyChooseUs } from '../components/sections/WhyChooseUs'
 import { About } from '../components/sections/About'
 import { MissionVision } from '../components/sections/MissionVision'
+import { ExpertCare } from '../components/sections/ExpertCare'
 
 export const Home = () => {
   return (
@@ -11,6 +12,7 @@ export const Home = () => {
       <Hero />
       <BannerSlider />
       <About />
+      <ExpertCare />
       <WhyChooseUs />
       <Facilities />
       <MissionVision />
