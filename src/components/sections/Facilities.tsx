@@ -35,9 +35,9 @@ const FACILITIES = [
     description: "Premium design and environment for a soothing postnatal journey."
   },
   {
-    title: "Specialized Consultations",
+    title: "Entertainment zone",
     image: consultations,
-    description: "Expert medical guidance and personalized care for your menopausal health."
+    description: "A dedicated entertainment space with games, books, and other amenities for recreation and relaxation."
   },
 ];
 
@@ -74,7 +74,7 @@ export const Facilities = () => {
                   {facility.description}
                 </p>
               </div>
-              
+
               {/* Optional overlay line */}
               <div className="absolute bottom-0 left-0 h-1.5 bg-primary-300 transition-all duration-500 w-0 group-hover:w-full" />
             </motion.div>

@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, ShoppingBag, HeartPulse, Landmark, TrainFront, Plane } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import nilamburMap from '../assets/nilambur-map.png';
+import hiliteImg from '../assets/hilite.jpeg';
+import railwayImg from '../assets/railway.jpeg';
+import teakImg from '../assets/conoly.jpeg';
+import conolyImg from '../assets/teak.jpeg';
+import materniImg from '../assets/materni.jpeg';
+import airpImg from '../assets/airp.jpeg';
 
 const Instagram = ({ className }: { className?: string }) => (
   <svg
@@ -50,12 +56,12 @@ const WhatsApp = ({ className }: { className?: string }) => (
 );
 
 const nearestPlaces = [
-  { name: "Hilite mall", distance: "500 meter", icon: ShoppingBag },
-  { name: "New life maternity hospital", distance: "1 km", icon: HeartPulse },
-  { name: "Connolly’s plot", distance: "2.5 km", icon: MapPin },
-  { name: "Teak museum", distance: "9 km", icon: Landmark },
-  { name: "Nilambur railway station", distance: "8 km", icon: TrainFront },
-  { name: "Calicut airport", distance: "38 km", icon: Plane },
+  { name: "Hilite mall", distance: "500 meter", image: hiliteImg, link: "https://www.google.com/maps/search/HiLITE+Centre+Nilambur" },
+  { name: "New life maternity hospital", distance: "1 km", image: materniImg, link: "https://www.google.com/maps/search/New+Life+Maternity+Hospital+Nilambur" },
+  { name: "Connolly’s plot", distance: "2.5 km", image: conolyImg, link: "https://www.google.com/maps/search/Connolly's+Plot+Nilambur" },
+  { name: "Teak museum", distance: "9 km", image: teakImg, link: "https://www.google.com/maps/search/Teak+Museum+Nilambur" },
+  { name: "Nilambur railway station", distance: "8 km", image: railwayImg, link: "https://www.google.com/maps/search/Nilambur+Road+Railway+Station" },
+  { name: "Calicut airport", distance: "38 km", image: airpImg, link: "https://www.google.com/maps/search/Calicut+International+Airport" },
 ];
 
 export const ContactPage = () => {
@@ -162,19 +168,34 @@ export const ContactPage = () => {
                 {/* Decorative background element */}
                 <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-primary-50 rounded-full opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-2xl" />
 
-                <div className="flex flex-col gap-4 relative z-10">
-                  <div className="w-12 h-12 rounded-xl bg-neutral-50 flex items-center justify-center text-neutral-400 group-hover:bg-primary-300 group-hover:text-white transition-all duration-300 shadow-sm">
-                    <place.icon className="w-6 h-6" />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <h3 className="text-neutral-900 font-bold text-lg mb-1 group-hover:text-primary-400 transition-colors">{place.name}</h3>
-                    <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary-300" />
-                      <span className="text-primary-300 text-xs font-black uppercase tracking-wider">{place.distance} away</span>
+                <a 
+                  href={place.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col gap-4 relative z-10 h-full"
+                >
+                  {place.image && (
+                    <div className="w-full h-40 rounded-xl overflow-hidden mb-2 relative">
+                      <img
+                        src={place.image}
+                        alt={place.name}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white text-xs font-bold uppercase tracking-widest bg-black/40 px-3 py-1 rounded-full backdrop-blur-sm">View Map</span>
+                      </div>
+                    </div>
+                  )}
+                  <div className="flex flex-col gap-4">
+                    <div className="flex flex-col">
+                      <h3 className="text-neutral-900 font-bold text-lg mb-1 group-hover:text-primary-400 transition-colors">{place.name}</h3>
+                      <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary-300" />
+                        <span className="text-primary-300 text-xs font-black uppercase tracking-wider">{place.distance} away</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </motion.div>
             ))}
           </div>
