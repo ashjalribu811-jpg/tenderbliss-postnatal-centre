@@ -1,23 +1,20 @@
 import { motion } from "framer-motion";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Utensils, Wifi, Bath, Tv, Sparkles, HeartPulse } from "lucide-react";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import wellLogo from "../assets/welllogo.png";
 
 // No suite images selected
 
 const PACKAGES = [
   {
     name: "Bliss Cozy Stay",
-    subtitle: "1 BHK – Budget Friendly",
-    features: [
-      "WiFi access",
-      "Fan/optional AC",
-      "Compact bedroom Setup",
-      "Smart TV",
-      "Essential baby care space",
-      "Attached bathroom",
-      "Daily cleaning",
-      "Basic nurse support access",
-      "Simple, neat interiors"
+    subtitle: "1 BHK – Essential Living",
+    Inclusions: [
+      "Calm and elegant interiors",
+      "Includes stay for 1 bystander",
+      "Air-conditioned bedroom ( (Optional upgrade)",
+      "Comfortable bedding setup",
+
     ],
     color: "bg-[#FDFFFF]/90",
     borderColor: "border-[#E8E4E0]",
@@ -25,38 +22,28 @@ const PACKAGES = [
   },
   {
     name: "Bliss Comfort Suite",
-    subtitle: "1 BHK – Standard Comfort",
-    features: [
-      "High-speed WiFi",
-      "Air-conditioned Bedroom",
-      "Compact living area",
-      "LED TV",
-      "Basic baby care setup",
-      "Comfortable bedding",
-      "Attached Bathroom with hot water",
-      "housekeeping service",
-      "Nurse Support(on Request)",
-      "Warm,cozy interior design"
+    subtitle: "1 BHK – Signature Comfort",
+    Inclusions: [
+      " Includes stay for 1 bystander",
+      "Warm and elegant interiors",
+      "Air-conditioned bedroom (Optional upgrade)",
+      "Cozy and upgraded bedding",
     ],
-    color: "bg-[#E8E4E0]/70",
+    color: "bg-[#E8E4E0]/90",
     borderColor: "border-[#D2B68A]/30",
     popular: false,
   },
   {
     name: "Bliss Divine Care Suite",
-    subtitle: "2 BHK – Care Focused",
-    features: [
-      "High speed wifi",
-      "Air-conditioned bedrooms",
-      "Confortable living space",
+    subtitle: "2 BHK – Family Suite Living",
+    Inclusions: [
+      "Wellness-focused interiors with spacious living",
+      "Includes stay for 2 bystanders",
+      "Fully air-conditioned rooms",
       "Smart LED TV",
       "Mother & Baby care essentials setup",
-      "Baby bassinet",
-      "Fridge",
-      "Clean attached bathrooms",
-      "Daily housekeeping",
-      "Nurse assistance on call",
-      "Calm,Wellness-Focused interiors"
+      "Premium bedding setup",
+      
     ],
     color: "bg-[#EEE5D9]/90",
     borderColor: "border-[#D2B68A]/50",
@@ -64,23 +51,46 @@ const PACKAGES = [
   },
   {
     name: "Bliss Royale Suite",
-    subtitle: "2 BHK – Premium Luxury",
-    features: [
-      "High-speed WiFi (unlimited)",
+    subtitle: "2 BHK –  Premium Luxury Experience",
+    Inclusions: [
+      "Premium soothing interiors with spacious living & dining",
+      " Includes stay for 2 bystanders",
       "Fully air-conditioned rooms",
-      "Spacious living & dining area",
-      "Smart TV with OTT access",
-      "Premium bedding & recliner for mother",
-      "Baby cot & newborn care station",
-      "Private kitchenette (induction, kettle, fridge)",
-      "Attached modern bathrooms with hot water",
-      "Daily housekeeping & laundry service",
-      "24/7 nurse call support",
-      "Ambient lighting & soothing interiors"
+      "XL Smart TV with integrated  OTT platforms  and Fridge",
+      "Luxury bedding & recliner for mother",
+      "Modern attached bathrooms with hot water",
+      
     ],
     color: "bg-[#D2B68A]/50",
     borderColor: "border-[#D2B68A]/60",
     popular: true,
+  }
+];
+
+const COMPLIMENTARY_SERVICES = [
+  {
+    text: "Nutritionally tailored meals served nine times a day for mothers",
+    icon: Utensils
+  },
+  {
+    text: "High-speed WiFi (unlimited)",
+    icon: Wifi
+  },
+  {
+    text: "Attached bathrooms with hot water",
+    icon: Bath
+  },
+  {
+    text: "Smart TV and Fridge",
+    icon: Tv
+  },
+  {
+    text: "Daily housekeeping and laundry service for both mother and bystander",
+    icon: Sparkles
+  },
+  {
+    text: "Nursing assistance (on request)",
+    icon: HeartPulse
   }
 ];
 
@@ -136,7 +146,7 @@ export const PackagesPage = () => {
 
                 <div className="space-y-3.5 mb-10 flex-grow">
                   <p className="text-[10px] font-inter font-black uppercase tracking-[0.2em] text-neutral-400 border-b border-neutral-200/50 pb-2 mb-4">Inclusions</p>
-                  {pkg.features.map((feature) => (
+                  {pkg.Inclusions.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
                       <div className="mt-1 w-4 h-4 rounded-full flex items-center justify-center bg-white border border-neutral-200 text-primary-300 shrink-0">
                         <Check className="w-2.5 h-2.5 stroke-[4px]" />
@@ -161,6 +171,37 @@ export const PackagesPage = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Complimentary Services */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-16 p-8 md:p-12 rounded-[3rem] bg-white border-2 border-primary-300/20 shadow-soft relative overflow-hidden group"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary-100/30 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:scale-110 transition-transform duration-700" />
+          
+          <div className="relative z-10">
+            <h3 className="text-2xl font-inter font-bold text-neutral-900 mb-8 border-b border-neutral-100 pb-6 flex items-center gap-4">
+              <span className="w-12 h-12 rounded-2xl bg-primary-300/10 flex items-center justify-center overflow-hidden">
+                <img src={wellLogo} alt="Wellness Icon" className="w-8 h-8 object-contain" />
+              </span>
+              Complimentary Wellness & Care Services
+            </h3>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-12">
+              {COMPLIMENTARY_SERVICES.map((service, index) => (
+                <div key={index} className="flex items-start gap-5 group/item">
+                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center bg-primary-50 text-primary-300 shrink-0 group-hover/item:bg-primary-300 group-hover/item:text-white transition-all duration-300 shadow-sm">
+                    <service.icon className="w-6 h-6 stroke-[2px]" />
+                  </div>
+                  <span className="text-[15px] font-sans font-medium leading-relaxed text-neutral-600 pt-1">{service.text}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </motion.div>
       </div>
     </main>
   );

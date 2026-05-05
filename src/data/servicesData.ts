@@ -4,20 +4,20 @@ import faceBellyImg from '../assets/services/Face-and-Belly-Pack.jpg.jpeg';
 import navariImg from '../assets/services/Navara-theppu.jpg.jpeg';
 import vedhuImg from '../assets/services/Vedhu-kuli.jpg.jpeg';
 import sitzbathImg from '../assets/services/1000345088-01.jpeg';
-import antistretchImg from '../assets/services/1000345091-01.jpeg';
+import antistretchImg from '../assets/services/anti.jpg';
 import facialImg from '../assets/services/1000345098-01.jpeg';
-import fertilityImg from '../assets/services/1000345150-01.jpeg';
+import fertilityImg from '../assets/services/inf.jpg';
 import antenatalImg from '../assets/services/1000345153-01.jpeg';
 import fibroidImg from '../assets/services/IMG-20260422-WA0016.jpg (1).jpeg';
 import cystImg from '../assets/services/IMG-20260422-WA0018.jpg.jpeg'
 import uttaravastiImg from '../assets/services/1000345207-02.jpeg';
 import stressImg from '../assets/services/1000345283-01.jpeg';
-import tummyImg from '../assets/services/1000345094-01.jpeg';
+import tummyImg from '../assets/services/tum.jpg';
 import pcosImg from '../assets/services/IMG-20260422-WA0022.jpg.jpeg';
 import postnatalImg from '../assets/services/1000345156-01.jpeg';
-import endoImg from '../assets/services/1000345165-01.jpeg';
-import periodImg from '../assets/services/1000345173-01.jpeg';
-import hygieneImg from '../assets/services/IMG-20260422-WA0020.jpg.jpeg';
+import endoImg from '../assets/services/mm.jpg';
+import periodImg from '../assets/services/irr.jpg';
+import hygieneImg from '../assets/services/leuc.jpg';
 import uterineImg from '../assets/services/IMG-20260422-WA0021.jpg.jpeg';
 import pcosDetailImg from '../assets/services/pcos_detail.png';
 import pcosPainImg from '../assets/services/IMG-20260422-WA0022.jpg.jpeg';
@@ -27,8 +27,8 @@ import podiKizhiImg from '../assets/services/Podi-kizhi.jpg.jpeg';
 import yogaImg from '../assets/services/yoga.jpg.jpeg';
 import keshadoopanamImg from '../assets/services/Keshadoopanam.jpg.jpeg';
 import padhabyangham from "../assets/services/1000345082-01.jpeg"
-import steambath from "../assets/services/1000345101-01.jpeg"
-import menopauseImg from "../assets/services/IMG-20260422-WA0023.jpg.jpeg"
+import steambath from "../assets/services/stm.jpeg"
+import menopauseImg from "../assets/services/mn syndrome.jpg"
 
 export type CategoryType = 'GENERAL PACKAGES' | 'SPECIAL PACKAGES' | 'OUR SPECIALITIES' | 'EXCLUSIVE PACKAGE ON';
 
@@ -53,6 +53,7 @@ export interface ServiceData {
   description: string;
   image: string;
   sections: ServiceSection[];
+  imageFit?: 'cover' | 'contain';
 }
 
 export const CATEGORY_META: Record<string, CategoryMeta> = {
@@ -396,6 +397,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
     vision: "Relieving chronic pelvic pain and balancing endometrial growth.",
     description: "Ayurvedic management of Vata imbalance to reduce pain and inflammation associated with endometriosis.",
     image: endoImg,
+    imageFit: 'contain',
     sections: [
       {
         title: "Pain Management",

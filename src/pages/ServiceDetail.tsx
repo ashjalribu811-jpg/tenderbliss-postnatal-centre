@@ -74,7 +74,7 @@ export const ServiceDetail = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-full object-cover object-center"
+                className={`w-full h-full ${service.imageFit === 'contain' ? 'object-contain bg-white/50' : 'object-cover'} object-center`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/90 via-neutral-900/40 to-transparent" />
               <div className="absolute bottom-12 left-12 right-12">

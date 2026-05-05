@@ -37,7 +37,7 @@ const FACILITIES = [
   {
     title: "Specialized Consultations",
     image: consultations,
-    description: "Expert medical guidance and personalized care for your postnatal health."
+    description: "Expert medical guidance and personalized care for your menopausal health."
   },
 ];
 
