@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import doctorImg from "../../assets/doctorimg.jpeg";
 
 import { SectionHeading } from "../ui/SectionHeading";
 
@@ -41,7 +42,7 @@ const TESTIMONIALS = [
     id: 5,
     name: "Dr. Sophia Lee",
     role: "Physician & Mother",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80",
+    image: doctorImg,
     text: "As a medical professional myself, I hold hospitals to extremely high standards. TenderBliss exceeded my expectations in clinical excellence, hygiene, and the absolute warmth of their labor suites.",
     rating: 5,
   },
@@ -125,7 +126,7 @@ export const Testimonials = () => {
                       <img
                         src={testimonial.image}
                         alt={testimonial.name}
-                        className="w-14 h-14 rounded-full object-cover shadow-sm border-2 border-primary-50"
+                        className="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-primary-50"
                       />
                       <div>
                         <h4 className="font-bold text-neutral-900 text-base">

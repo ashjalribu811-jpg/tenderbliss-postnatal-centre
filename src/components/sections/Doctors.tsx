@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
+import doctorImg from "../../assets/doctorimg.jpeg";
 
 const DOCTORS = [
   {
     id: 1,
-    name: "Dr. Sarah Jenkins",
-    specialty: "Senior Obstetrician",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    name: "Dr. Aparna Nath",
+    specialty: "Specialist in Prasuthi & Streeroga",
+    image: doctorImg,
     experience: "15+ Years",
   },
   {
@@ -50,7 +51,7 @@ export const Doctors = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative overflow-hidden rounded-3xl aspect-[4/5] mb-6 shadow-soft">
+              <div className="relative overflow-hidden rounded-3xl aspect-[3/4] mb-6 shadow-soft">
                 <img
                   src={doctor.image}
                   alt={doctor.name}
