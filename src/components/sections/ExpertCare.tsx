@@ -23,7 +23,7 @@ export const ExpertCare = () => {
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white text-center">
                 <h3 className="text-3xl text-white/90 font-serif font-bold">Dr. Aparna Nath K</h3>
                 <p className="text-white/90 font-medium">BAMS, MS (Ay)</p>
-                <p className="text-white/70 font-small">Specialist in Ayurveda Gynaecology and Women’s Health</p>
+                <p className="text-white/80 font-small">Specialist in Ayurveda Gynaecology & Women’s Health</p>
               </div>
             </div>
             {/* Decoration */}
