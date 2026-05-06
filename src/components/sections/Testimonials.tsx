@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import doctorImg from "../../assets/doctorimg.jpeg";
+import doctorImg from "../../assets/doctor.jpg.jpeg";
 
 import { SectionHeading } from "../ui/SectionHeading";
 

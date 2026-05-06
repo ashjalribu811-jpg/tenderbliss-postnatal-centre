@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import doctorImg from "../../assets/doctorimg.jpeg";
+import doctorImg from "../../assets/doctor.jpg.jpeg";
 
 export const ExpertCare = () => {
   return (
@@ -21,8 +21,9 @@ export const ExpertCare = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white">
-                <h3 className="text-3xl text-white/90 font-serif font-bold">Dr. Aparna Nath</h3>
-                <p className="text-white/90 font-medium">BAMS, MS - Specialist in Prasuthi & Streeroga</p>
+                <h3 className="text-3xl text-white/90 font-serif font-bold">Dr. Aparna Nath K</h3>
+                <p className="text-white/90 font-medium">BAMS, MS (Ay)</p>
+                <p className="text-white/90 font-small">Specialist in Ayurveda Gynaecology and Women’s Health</p>
               </div>
             </div>
             {/* Decoration */}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
-import doctorImg from "../../assets/doctorimg.jpeg";
+import doctorImg from "../../assets/doctor.jpg.jpeg";
 
 const DOCTORS = [
   {
