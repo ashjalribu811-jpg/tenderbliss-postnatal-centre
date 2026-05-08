@@ -46,6 +46,17 @@
   
   body {
     @apply bg-background-200 text-neutral-800 antialiased;
+    text-transform: capitalize;
+  }
+
+  /* Exclude emails and specific cases from capitalization */
+  a[href^="mailto:"],
+  a[href^="mailto:"] *,
+  input,
+  textarea,
+  .normal-case,
+  .no-capitalize {
+    text-transform: none !important;
   }
 
   p {

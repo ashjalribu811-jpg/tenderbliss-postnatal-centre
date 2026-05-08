@@ -7,6 +7,8 @@ import teakImg from '../assets/conoly.jpeg';
 import conolyImg from '../assets/teak.jpeg';
 import materniImg from '../assets/materni.jpeg';
 import airpImg from '../assets/airp.jpeg';
+import funtarticaImg from '../assets/funtartica.jpeg';
+import teakFunImg from '../assets/teak fun.jpeg';
 
 const Instagram = ({ className }: { className?: string }) => (
   <svg
@@ -62,6 +64,8 @@ const nearestPlaces = [
   { name: "Teak museum", distance: "9 km", image: teakImg, link: "https://www.google.com/maps/search/Teak+Museum+Nilambur" },
   { name: "Nilambur railway station", distance: "8 km", image: railwayImg, link: "https://www.google.com/maps/search/Nilambur+Road+Railway+Station" },
   { name: "Calicut airport", distance: "38 km", image: airpImg, link: "https://www.google.com/maps/search/Calicut+International+Airport" },
+  { name: "Teak Fun Village", distance: "450 mtr", image: teakFunImg, link: "https://www.google.com/maps/search/Teak+Fun+Village+Nilambur" },
+  { name: "Funtartica Entertainment City", distance: "1 km", image: funtarticaImg, link: "https://www.google.com/maps/search/Funtartica+Entertainment+City+Nilambur" },
 ];
 
 export const ContactPage = () => {
@@ -168,7 +172,7 @@ export const ContactPage = () => {
                 {/* Decorative background element */}
                 <div className="absolute top-0 right-0 -mr-4 -mt-4 w-24 h-24 bg-primary-50 rounded-full opacity-0 group-hover:opacity-40 transition-opacity duration-500 blur-2xl" />
 
-                <a 
+                <a
                   href={place.link}
                   target="_blank"
                   rel="noopener noreferrer"

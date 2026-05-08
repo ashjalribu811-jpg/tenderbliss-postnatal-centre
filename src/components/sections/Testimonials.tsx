@@ -1,58 +1,42 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import doctorImg from "../../assets/doctor.jpg.jpeg";
 
 import { SectionHeading } from "../ui/SectionHeading";
+import { cn } from "../../lib/utils";
 
+
+const AVATAR_COLORS = [
+  "bg-blue-500",
+  "bg-red-500",
+  "bg-yellow-500",
+  "bg-green-500",
+  "bg-purple-500",
+  "bg-pink-500",
+  "bg-indigo-500",
+  "bg-teal-500",
+];
 
 const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sarah Jenkins",
-    role: "First-time Mother",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
-    text: "My experience at TenderBliss was nothing short of magical. The staff went above and beyond to make sure I was comfortable and informed every step of the way. The facilities feel more like a luxury hotel than a clinical setting.",
+    name: "Sini shameer",
+    text: "Masha Allah.... ❤️The best postnatal care center in malappuram district...",
     rating: 5,
+    color: AVATAR_COLORS[0],
   },
   {
     id: 2,
-    name: "Jessica & David",
-    role: "Parents of Twins",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
-    text: "Delivering twins can be daunting, but the team's expertise immediately put us at ease. The NICU team is incredible, and the postpartum care we received helped us transition so smoothly into our new life.",
+    name: "Nasriya Kkt",
+    text: "Best postnatal center in Kerala.... good service.... good ambience 💜",
     rating: 5,
+    color: AVATAR_COLORS[1],
   },
   {
     id: 3,
-    name: "Emily Roberts",
-    role: "Mother of three",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80",
-    text: "Having had my previous children at different hospitals, I can confidently say TenderBliss is in a league of its own. The personalized attention and holistic approach to maternal wellness are unmatched.",
+    name: "Fahim Huwaid",
+    text: "Well cared, and peaceful location glad to have them.",
     rating: 5,
-  },
-  {
-    id: 4,
-    name: "Priya & Arun",
-    role: "Parents of a beautiful girl",
-    image: "https://images.unsplash.com/photo-1542171246-0b81a4230ca3?auto=format&fit=crop&w=200&q=80",
-    text: "Our journey from conception to delivery was handled with such care. The doctors at TenderBliss were incredibly patient with all our questions, and the nursing staff felt like extended family by the time we left.",
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: "Dr. Sophia Lee",
-    role: "Physician & Mother",
-    image: doctorImg,
-    text: "As a medical professional myself, I hold hospitals to extremely high standards. TenderBliss exceeded my expectations in clinical excellence, hygiene, and the absolute warmth of their labor suites.",
-    rating: 5,
-  },
-  {
-    id: 6,
-    name: "Ayesha Khan",
-    role: "First-time Mother",
-    image: "https://images.unsplash.com/photo-1534126511673-b6899657816a?auto=format&fit=crop&w=200&q=80",
-    text: "The lactation consultants and postnatal care team completely saved my sanity during the first few weeks. I felt so supported physically and emotionally. The private recovery rooms are an absolute sanctuary.",
-    rating: 5,
+    color: AVATAR_COLORS[1],
   },
 ];
 
@@ -98,7 +82,7 @@ export const Testimonials = () => {
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 font-serif">
         <SectionHeading
-          title="Patient Stories"
+          title="Voices Of Care"
         />
 
         <div className="max-w-7xl mx-auto mt-16 relative">
@@ -118,30 +102,30 @@ export const Testimonials = () => {
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
               >
                 {getVisibleTestimonials().map((testimonial) => (
-                  <div 
+                  <div
                     key={testimonial.id}
                     className="bg-white rounded-[2rem] p-8 shadow-float border border-neutral-100 flex flex-col h-full hover:shadow-xl transition-shadow duration-300"
                   >
                     <div className="flex items-center gap-4 mb-6">
-                      <img
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover shadow-sm border-2 border-primary-50"
-                      />
+                      <div
+                        className={cn(
+                          "w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-sm border-2 border-white uppercase",
+                          testimonial.color
+                        )}
+                      >
+                        {testimonial.name.charAt(0)}
+                      </div>
                       <div>
                         <h4 className="font-bold text-neutral-900 text-base">
                           {testimonial.name}
                         </h4>
-                        <p className="text-primary-300 font-medium text-xs">
-                          {testimonial.role}
-                        </p>
                       </div>
                     </div>
-                    
+
                     <p className="text-neutral-700 italic text-[15px] leading-relaxed flex-grow">
                       "{testimonial.text}"
                     </p>
-                    
+
                     <div className="mt-6 flex gap-1">
                       {[...Array(5)].map((_, i) => (
                         <span key={i} className="text-amber-400 text-sm">★</span>
