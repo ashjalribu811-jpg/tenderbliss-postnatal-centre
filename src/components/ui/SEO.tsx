@@ -11,8 +11,7 @@ export const SEO = ({ title, description, keywords }: SEOProps) => {
   const location = useLocation();
 
   useEffect(() => {
-    const baseTitle = "TenderBliss | Premium Postnatal Wellness Center";
-    document.title = title ? `${title} | TenderBliss` : baseTitle;
+    document.title = "TenderBliss Postnatal Centre";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
