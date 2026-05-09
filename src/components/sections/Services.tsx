@@ -17,7 +17,7 @@ const SERVICES = [
   },
   {
     id: "post-natal-care",
-    title: "Post Natal Care",
+    title: "Postnatal Care",
     description: "Complete mother and baby wellness packages for the crucial first months of recovery and bonding.",
     image: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=80",
   },

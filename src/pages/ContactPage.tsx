@@ -1,3 +1,4 @@
+import { SEO } from '../components/ui/SEO';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import nilamburMap from '../assets/nilambur-map.png';
@@ -58,12 +59,12 @@ const WhatsApp = ({ className }: { className?: string }) => (
 );
 
 const nearestPlaces = [
-  { name: "Hilite mall", distance: "500 meter", image: hiliteImg, link: "https://www.google.com/maps/search/HiLITE+Centre+Nilambur" },
-  { name: "New life maternity hospital", distance: "1 km", image: materniImg, link: "https://www.google.com/maps/search/New+Life+Maternity+Hospital+Nilambur" },
+  { name: "HiLITE Mall", distance: "500 meters", image: hiliteImg, link: "https://www.google.com/maps/search/HiLITE+Centre+Nilambur" },
+  { name: "New Life Maternity Hospital", distance: "1 km", image: materniImg, link: "https://www.google.com/maps/search/New+Life+Maternity+Hospital+Nilambur" },
   { name: "Connolly’s plot", distance: "2.5 km", image: conolyImg, link: "https://www.google.com/maps/search/Connolly's+Plot+Nilambur" },
-  { name: "Teak museum", distance: "9 km", image: teakImg, link: "https://www.google.com/maps/search/Teak+Museum+Nilambur" },
-  { name: "Nilambur railway station", distance: "8 km", image: railwayImg, link: "https://www.google.com/maps/search/Nilambur+Road+Railway+Station" },
-  { name: "Calicut airport", distance: "38 km", image: airpImg, link: "https://www.google.com/maps/search/Calicut+International+Airport" },
+  { name: "Teak Museum", distance: "9 km", image: teakImg, link: "https://www.google.com/maps/search/Teak+Museum+Nilambur" },
+  { name: "Nilambur Railway Station", distance: "8 km", image: railwayImg, link: "https://www.google.com/maps/search/Nilambur+Road+Railway+Station" },
+  { name: "Calicut Airport", distance: "38 km", image: airpImg, link: "https://www.google.com/maps/search/Calicut+International+Airport" },
   { name: "Teak Fun Village", distance: "450 mtr", image: teakFunImg, link: "https://www.google.com/maps/search/Teak+Fun+Village+Nilambur" },
   { name: "Funtartica Entertainment City", distance: "1 km", image: funtarticaImg, link: "https://www.google.com/maps/search/Funtartica+Entertainment+City+Nilambur" },
 ];
@@ -71,6 +72,10 @@ const nearestPlaces = [
 export const ContactPage = () => {
   return (
     <div className="min-h-screen bg-background-200 pt-32 pb-20 px-6 md:px-12 flex flex-col items-center">
+      <SEO 
+        title="Contact Us"
+        description="Get in touch with TenderBliss Postnatal Wellness Center. We are located in Nilambur, Kerala. Reach out to us for enquiries, bookings, and more."
+      />
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

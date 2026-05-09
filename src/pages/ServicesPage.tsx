@@ -1,3 +1,4 @@
+import { SEO } from "../components/ui/SEO";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -42,7 +43,12 @@ const CATEGORIES = [
 export const ServicesPage = () => {
   return (
     <main className="pt-32 min-h-screen pb-24 bg-background-200 overflow-hidden">
+      <SEO 
+        title="Services"
+        description="Comprehensive postnatal care and Ayurvedic treatments. Explore our general packages, special packages, and clinical specialities for mother and baby wellness."
+      />
       <div className="container mx-auto px-6 md:px-12">
+        <h1 className="sr-only">TenderBliss Postnatal Services and Packages</h1>
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}

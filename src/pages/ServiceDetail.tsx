@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, Sparkles, Target } from 'lucide-react';
+import { SEO } from '../components/ui/SEO';
 import { Button } from '../components/ui/Button';
 import { SERVICES_DATA } from '../data/servicesData';
 
@@ -35,6 +36,10 @@ export const ServiceDetail = () => {
 
   return (
     <>
+      <SEO 
+        title={service.title}
+        description={service.description}
+      />
       <AnimatePresence>
         {isLoading && (
           <motion.div

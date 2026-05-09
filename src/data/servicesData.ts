@@ -152,7 +152,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "podi-kizhi": {
     id: "podi-kizhi",
-    title: "Podi kizhi",
+    title: "Podi Kizhi",
     category: "GENERAL PACKAGES",
     vision: "Detoxification through thermal therapy using medicinal herbal powders.",
     description: "A fermenting treatment where herbal powder bags are used to apply heat and pressure to the body.",
@@ -167,7 +167,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "navara-theppu": {
     id: "navara-theppu",
-    title: "Navara theppu",
+    title: "Navara Theppu",
     category: "GENERAL PACKAGES",
     vision: "Muscle strengthening and skin enrichment through nutrient-rich rice therapy.",
     description: "Application of cooked Navara rice and milk over the body to improve strength and complexion.",
@@ -182,7 +182,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "vedhu-kuli": {
     id: "vedhu-kuli",
-    title: "Vedhu kuli",
+    title: "Vedhu Kuli",
     category: "GENERAL PACKAGES",
     vision: "Postpartum purification through traditional steam and herbal water baths.",
     description: "A ritualistic bath using medicated water and steam to cleanse the body after childbirth.",
@@ -227,7 +227,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "padhabyangam": {
     id: "padhabyangam",
-    title: "Padhabyangam",
+    title: "Padhabhyangam",
     category: "SPECIAL PACKAGES",
     vision: "Revitalization of the entire body through specialized foot reflexology.",
     description: "Traditional Ayurvedic foot massage that stimulates vital nerves and induces deep relaxation.",
@@ -257,7 +257,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "antistrech-mark-treatment": {
     id: "antistrech-mark-treatment",
-    title: "Antistrech mark Treatment",
+    title: "Anti-stretch Mark Treatment",
     category: "SPECIAL PACKAGES",
     vision: "Restoring skin texture and confidence through natural collagen boosting.",
     description: "Specialized oil applications and herbal packs to fade pregnancy stretch marks and tighten skin.",
@@ -272,7 +272,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "tummy-correction-treatment": {
     id: "tummy-correction-treatment",
-    title: "Tummy correction Treatment",
+    title: "Tummy Correction Treatment",
     category: "SPECIAL PACKAGES",
     vision: "Safe and effective abdominal contouring after the postpartum phase.",
     description: "Focuses on toning the abdominal muscles and reducing excess fat accumulation after 6 months of delivery.",
@@ -347,7 +347,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
   },
   "post-natal-care": {
     id: "post-natal-care",
-    title: "Post natal care",
+    title: "Postnatal Care",
     category: "OUR SPECIALITIES",
     vision: "Restoring the mother's strength and ensuring baby's optimal development.",
     description: "Comprehensive care for the 'fourth trimester' including massages, diet, and emotional support.",

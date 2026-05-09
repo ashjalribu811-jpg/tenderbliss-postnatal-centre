@@ -1,3 +1,4 @@
+import { SEO } from "../components/ui/SEO";
 import { motion } from "framer-motion";
 import { Check, ArrowRight, Utensils, Wifi, Bath, Tv, Sparkles, HeartPulse } from "lucide-react";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -12,7 +13,7 @@ const PACKAGES = [
     Inclusions: [
       "Calm and elegant interiors",
       "Includes stay for 1 bystander",
-      "Air-conditioned bedroom ( (Optional upgrade)",
+      "Air-conditioned bedroom (Optional upgrade)",
       "Comfortable bedding setup",
 
     ],
@@ -97,7 +98,12 @@ const COMPLIMENTARY_SERVICES = [
 export const PackagesPage = () => {
   return (
     <main className="pt-32 pb-24 min-h-screen bg-background-200 overflow-hidden">
+      <SEO 
+        title="Packages"
+        description="Explore our curated luxury postnatal care packages. From Bliss Cozy Stay to Bliss Royale Suite, we have the perfect recovery plan for every mother."
+      />
       <div className="container mx-auto px-6 md:px-12">
+        <h1 className="sr-only">Our Postnatal Care Packages</h1>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -133,7 +139,7 @@ export const PackagesPage = () => {
               <div className="p-10 flex-grow flex flex-col relative">
                 {pkg.popular && (
                   <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary-300/90 text-white px-6 py-2 rounded-full text-[10px] font-inter font-black tracking-widest uppercase shadow-xl z-20 ring-4 ring-white whitespace-nowrap">
-                    Premium choice
+                    Premium Choice
                   </div>
                 )}
 

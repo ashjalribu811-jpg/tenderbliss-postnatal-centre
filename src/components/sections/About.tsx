@@ -62,7 +62,7 @@ export const About = () => {
                 {[
                   "Personalized postnatal care tailored to every mother’s unique needs.",
                   "24/7 expert support for both mother and newborn, ensuring complete peace of mind.",
-                  "Specialized ayurveda treatments  designed for postnatal wellness.",
+                  "Specialized Ayurvedic treatments designed for postnatal wellness.",
                 ].map((item, index) => (
                   <motion.li
                     key={index}

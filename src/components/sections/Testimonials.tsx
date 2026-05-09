@@ -19,22 +19,22 @@ const AVATAR_COLORS = [
 const TESTIMONIALS = [
   {
     id: 1,
-    name: "Sini shameer",
-    text: "Masha Allah.... ❤️The best postnatal care center in malappuram district...",
+    name: "Sini Shameer",
+    text: "Masha Allah.... ❤️The best postnatal care center in Malappuram district...",
     rating: 5,
     color: AVATAR_COLORS[0],
   },
   {
     id: 2,
     name: "Hilal Mohammed Kondeth",
-    text: "Best post natal care in malappuram ❤️",
+    text: "Best postnatal care in Malappuram ❤️",
     rating: 5,
     color: AVATAR_COLORS[1],
   },
   {
     id: 3,
     name: "Md Salih",
-    text: "One of the best post natal wellness center in Kerala",
+    text: "One of the best postnatal wellness center in Kerala",
     rating: 5,
     color: AVATAR_COLORS[1],
   },

@@ -35,7 +35,7 @@ const FACILITIES = [
     description: "Premium design and environment for a soothing postnatal journey."
   },
   {
-    title: "Entertainment zone",
+    title: "Entertainment Zone",
     image: consultations,
     description: "A dedicated entertainment space with games, books, and other amenities for recreation and relaxation."
   },

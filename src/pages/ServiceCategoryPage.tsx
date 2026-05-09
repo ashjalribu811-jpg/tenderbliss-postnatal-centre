@@ -1,3 +1,4 @@
+import { SEO } from '../components/ui/SEO';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
@@ -29,7 +30,12 @@ export const ServiceCategoryPage = () => {
 
   return (
     <main className="min-h-screen pt-32 pb-20 bg-background-200">
+      <SEO 
+        title={meta.title}
+        description={meta.description}
+      />
       <div className="container mx-auto px-6 md:px-12">
+        <h1 className="sr-only">{meta.title}</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           {/* Left Column: Treatments List */}
