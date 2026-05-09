@@ -8,7 +8,7 @@ import conolyImg from '../assets/teak.jpeg';
 import materniImg from '../assets/materni.jpeg';
 import airpImg from '../assets/airp.jpeg';
 import funtarticaImg from '../assets/funtartica.jpeg';
-import teakFunImg from '../assets/teak fun.jpeg';
+import teakFunImg from '../assets/fun.jpeg';
 
 const Instagram = ({ className }: { className?: string }) => (
   <svg
