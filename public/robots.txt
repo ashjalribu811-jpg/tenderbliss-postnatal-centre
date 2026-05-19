@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tenderbliss.com/sitemap.xml
+Sitemap: https://tenderbliss.in/sitemap.xml

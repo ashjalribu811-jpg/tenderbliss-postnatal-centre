@@ -30,7 +30,7 @@ export const SEO = ({ title, description, keywords }: SEOProps) => {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', `https://tenderbliss.com${location.pathname}`);
+    canonical.setAttribute('href', `https://tenderbliss.in${location.pathname}`);
 
   }, [title, description, keywords, location.pathname]);
 
