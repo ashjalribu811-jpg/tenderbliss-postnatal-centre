@@ -12,10 +12,8 @@ export const Navbar = () => {
     setIsScrolled(window.scrollY > 40);
 
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
       requestAnimationFrame(() => {
-        setIsScrolled(currentScrollY > 40);
+        setIsScrolled(window.scrollY > 40);
       });
     };
 
@@ -217,7 +215,7 @@ export const Navbar = () => {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden p-2 rounded-xl text-neutral-800 active:scale-95 transition-transform duration-150"
+              className="lg:hidden p-2 rounded-xl text-neutral-800 active:scale-95 transition-transform duration-150 touch-manipulation"
               onClick={() =>
                 setIsMobileMenuOpen(
                   (prev) => !prev
@@ -299,6 +297,7 @@ export const Navbar = () => {
           transform-gpu will-change-transform
           transition-transform duration-300 ease-out
           lg:hidden flex flex-col
+          pointer-events-auto touch-auto
           ${
             isMobileMenuOpen
               ? "translate-x-0"
@@ -317,30 +316,37 @@ export const Navbar = () => {
               onClick={() =>
                 setIsMobileMenuOpen(false)
               }
-              className="p-2 rounded-lg active:scale-95 transition-transform duration-150"
+              className="p-2 rounded-lg active:scale-95 transition-transform duration-150 touch-manipulation"
             >
               <X className="w-5 h-5 text-neutral-700" />
             </button>
           </div>
 
           {/* Menu Links */}
-          <div className="flex flex-col p-5 gap-2 overflow-y-auto">
+          <div className="flex flex-col p-5 gap-2 overflow-y-scroll touch-pan-y">
             {navLinks.map((link) => (
               <div
                 key={link.name}
                 className="flex flex-col"
               >
-                <Link
-                  to={link.href || "#"}
-                  onClick={() => {
-                    if (!link.hasDropdown) {
-                      setIsMobileMenuOpen(false);
+                {link.hasDropdown ? (
+                  <button
+                    type="button"
+                    className="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold text-neutral-700 uppercase touch-manipulation"
+                  >
+                    {link.name}
+                  </button>
+                ) : (
+                  <Link
+                    to={link.href!}
+                    onClick={() =>
+                      setIsMobileMenuOpen(false)
                     }
-                  }}
-                  className="px-4 py-3 rounded-xl text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors duration-200 uppercase"
-                >
-                  {link.name}
-                </Link>
+                    className="px-4 py-3 rounded-xl text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors duration-200 uppercase touch-manipulation"
+                  >
+                    {link.name}
+                  </Link>
+                )}
 
                 {link.hasDropdown && (
                   <div className="pl-4 mt-2 mb-3 flex flex-col gap-2 border-l-2 border-primary-100">
@@ -354,7 +360,7 @@ export const Navbar = () => {
                               false
                             )
                           }
-                          className={`text-sm font-semibold uppercase transition-colors duration-200 ${
+                          className={`text-sm font-semibold uppercase transition-colors duration-200 touch-manipulation ${
                             item.isHighlight
                               ? "text-primary-300"
                               : "text-neutral-600 hover:text-primary-300"
@@ -374,7 +380,7 @@ export const Navbar = () => {
           <div className="mt-auto p-5 border-t border-neutral-100">
             <a
               href="https://wa.me/919946223233"
-              className="w-full bg-primary-300 text-white py-4 rounded-xl font-semibold flex items-center justify-center shadow-md hover:bg-primary-200 transition-all duration-300"
+              className="w-full bg-primary-300 text-white py-4 rounded-xl font-semibold flex items-center justify-center shadow-md hover:bg-primary-200 transition-all duration-300 touch-manipulation"
             >
               Quick WhatsApp Enquiry
             </a>
