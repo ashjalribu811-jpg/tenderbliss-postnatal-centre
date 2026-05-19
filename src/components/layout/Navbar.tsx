@@ -305,21 +305,19 @@ export const Navbar = () => {
           }`}
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-5 border-b border-neutral-100">
+        <div className="flex items-center justify-between p-5 border-b border-neutral-100">
             <img
               src={logo}
               alt="Logo"
               className="w-[150px] object-contain"
             />
 
-            <button
-              onClick={() =>
-                setIsMobileMenuOpen(false)
-              }
-              className="p-2 rounded-lg active:scale-95 transition-transform duration-150 touch-manipulation"
-            >
-              <X className="w-5 h-5 text-neutral-700" />
-            </button>
+              <button
+        onClick={() => setIsMobileMenuOpen(false)}
+        className="p-2 rounded-lg active:scale-95 transition-transform duration-150 touch-manipulation"
+      >
+        <X className="w-5 h-5 text-neutral-700" />
+      </button>
           </div>
 
           {/* Menu Links */}
@@ -378,12 +376,16 @@ export const Navbar = () => {
 
           {/* CTA */}
           <div className="mt-auto p-5 border-t border-neutral-100">
-            <a
-              href="https://wa.me/919946223233"
-              className="w-full bg-primary-300 text-white py-4 rounded-xl font-semibold flex items-center justify-center shadow-md hover:bg-primary-200 transition-all duration-300 touch-manipulation"
-            >
-              Quick WhatsApp Enquiry
-            </a>
+           <a
+  href="https://wa.me/919946223233"
+  className="w-full bg-primary-300 text-white py-4 rounded-2xl
+  font-semibold flex items-center justify-center
+  shadow-lg active:scale-[0.98]
+  transition-all duration-200
+  touch-manipulation"
+>
+  Quick WhatsApp Enquiry
+</a>
           </div>
         </div>
       </motion.header>
