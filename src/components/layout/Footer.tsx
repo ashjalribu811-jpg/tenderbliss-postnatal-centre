@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import logo from "../../assets/logos.png";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -15,23 +16,23 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start transition-all duration-300 gap-12 md:gap-24 mb-12">
           {/* Brand & Mini Info - Logo on Left Side */}
           <div className="flex-shrink-0 flex justify-center md:justify-start items-center md:items-start lg:w-64">
-            <a href="/" className="inline-block">
+            <Link to="/" className="inline-block">
               <img
                 src={logo}
                 alt="TenderBliss Logo"
                 className="w-[270px] h-[163px] object-contain"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Quick Links */}
           <div className="flex-shrink-0 lg:w-64 text-center md:text-left">
             <h4 className="font-sans text-xl font-bold text-neutral-900 mb-4">Quick Links</h4>
             <div className="flex flex-col items-center md:items-start gap-3 text-base">
-              <a href="/" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Home</a>
-              <a href="/moments" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</a>
-              <a href="/packages" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Packages</a>
-              <a href="/contact" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Contact Us</a>
+              <Link to="/" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Home</Link>
+              <Link to="/moments" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</Link>
+              <Link to="/packages" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Packages</Link>
+              <Link to="/contact" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Contact Us</Link>
             </div>
           </div>
 
