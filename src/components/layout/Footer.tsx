@@ -16,7 +16,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start transition-all duration-300 gap-12 md:gap-24 mb-12">
           {/* Brand & Mini Info - Logo on Left Side */}
           <div className="flex-shrink-0 flex justify-center md:justify-start items-center md:items-start lg:w-64">
-            <Link to="/" className="inline-block">
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="inline-block">
               <img
                 src={logo}
                 alt="TenderBliss Logo"
@@ -29,10 +29,10 @@ export const Footer = () => {
           <div className="flex-shrink-0 lg:w-64 text-center md:text-left">
             <h4 className="font-sans text-xl font-bold text-neutral-900 mb-4">Quick Links</h4>
             <div className="flex flex-col items-center md:items-start gap-3 text-base">
-              <Link to="/" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Home</Link>
-              <Link to="/moments" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</Link>
-              <Link to="/packages" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Packages</Link>
-              <Link to="/contact" className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Contact Us</Link>
+              <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Home</Link>
+              <Link to="/moments" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</Link>
+              <Link to="/packages" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Packages</Link>
+              <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Contact Us</Link>
             </div>
           </div>
 
