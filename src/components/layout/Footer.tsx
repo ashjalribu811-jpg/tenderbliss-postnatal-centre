@@ -46,10 +46,12 @@ export const Footer = () => {
                   near nayara petrol station,<br />Tanah Mampad, Nilambur 676542
                 </a>
               </li>
-              <li className="flex flex-row items-start justify-start gap-2 text-neutral-500">
-                <Phone className="w-5 h-5 text-primary-300 flex-shrink-0 mt-1" />
-                <div className="flex flex-col gap-1">
+              <li className="flex flex-col gap-1 text-neutral-500">
+                <div className="flex flex-row items-center justify-start gap-2">
+                  <Phone className="w-5 h-5 text-primary-300 flex-shrink-0" />
                   <a href="https://wa.me/919946223233" target="_blank" rel="noopener noreferrer" className="hover:text-primary-300 transition-colors">+91 9946223233</a>
+                </div>
+                <div className="pl-7">
                   <a href="https://wa.me/918848904949" target="_blank" rel="noopener noreferrer" className="hover:text-primary-300 transition-colors">+91 8848904949 (2nd number)</a>
                 </div>
               </li>
