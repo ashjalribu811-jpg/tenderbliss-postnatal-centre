@@ -109,9 +109,14 @@ export const ContactPage = () => {
               </div>
               <div className="flex flex-col pt-4">
                 <p className="text-neutral-400 text-sm mb-1.5 uppercase tracking-wider font-semibold">Call/WhatsApp</p>
-                <a href="https://wa.me/919946223233" target="_blank" rel="noopener noreferrer" className="text-neutral-800 text-lg font-medium hover:text-primary-300 transition-colors">
-                  +91 9946223233
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a href="https://wa.me/919946223233" target="_blank" rel="noopener noreferrer" className="text-neutral-800 text-lg font-medium hover:text-primary-300 transition-colors">
+                    +91 9946223233
+                  </a>
+                  <a href="https://wa.me/918848904949" target="_blank" rel="noopener noreferrer" className="text-neutral-800 text-lg font-medium hover:text-primary-300 transition-colors">
+                    +91 8848904949 (2nd number)
+                  </a>
+                </div>
               </div>
             </div>
 

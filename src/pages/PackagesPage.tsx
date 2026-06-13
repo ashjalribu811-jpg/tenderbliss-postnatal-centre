@@ -8,20 +8,6 @@ import wellLogo from "../assets/welllogo.png";
 
 const PACKAGES = [
   {
-    name: "Bliss Cozy Stay",
-    subtitle: "1 BHK – Essential Living",
-    Inclusions: [
-      "Calm and elegant interiors",
-      "Includes stay for 1 bystander",
-      "Air-conditioned bedroom (Optional upgrade)",
-      "Comfortable bedding setup",
-
-    ],
-    color: "bg-[#FDFFFF]/90",
-    borderColor: "border-[#E8E4E0]",
-    popular: false,
-  },
-  {
     name: "Bliss Comfort Suite",
     subtitle: "1 BHK – Signature Comfort",
     Inclusions: [
@@ -100,7 +86,7 @@ export const PackagesPage = () => {
     <main className="pt-32 pb-24 min-h-screen bg-background-200 overflow-hidden">
       <SEO 
         title="Packages"
-        description="Explore our curated luxury postnatal care packages. From Bliss Cozy Stay to Bliss Royale Suite, we have the perfect recovery plan for every mother."
+        description="Explore our curated luxury postnatal care packages. From Bliss Comfort Suite to Bliss Royale Suite, we have the perfect recovery plan for every mother."
       />
       <div className="container mx-auto px-6 md:px-12">
         <h1 className="sr-only">Our Postnatal Care Packages</h1>
@@ -118,7 +104,7 @@ export const PackagesPage = () => {
         </motion.div>
 
         {/* Package Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch pt-8 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch pt-8 relative max-w-5xl mx-auto">
           {/* Subtle Background Decoration */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-full bg-white -rotate-3 rounded-[5rem] -z-10 blur-3xl opacity-30" />
 
