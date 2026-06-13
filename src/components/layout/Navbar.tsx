@@ -1,12 +1,17 @@
 import { useState, useEffect, type MouseEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logo from "../../assets/logos.png";
 
 export const Navbar = () => {
+  const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location.pathname]);
 
   useEffect(() => {
     setIsScrolled(window.scrollY > 40);
@@ -337,9 +342,6 @@ export const Navbar = () => {
                 ) : (
                   <Link
                     to={link.href!}
-                    onClick={() =>
-                      setIsMobileMenuOpen(false)
-                    }
                     className="px-4 py-3 rounded-xl text-sm font-semibold text-neutral-700 hover:bg-neutral-50 transition-colors duration-200 uppercase touch-manipulation"
                   >
                     {link.name}
@@ -353,11 +355,6 @@ export const Navbar = () => {
                         <Link
                           key={item.id}
                           to={`/services/category/${item.id}`}
-                          onClick={() =>
-                            setIsMobileMenuOpen(
-                              false
-                            )
-                          }
                           className={`text-sm font-semibold uppercase transition-colors duration-200 touch-manipulation ${
                             item.isHighlight
                               ? "text-primary-300"
