@@ -42,10 +42,10 @@ export const ExpertCare = () => {
             <span className="text-primary-300 font-bold tracking-[0.2em] uppercase text-sm mb-4 block font-inter">Expert Medical Guidance</span>
 
             <p className="text-lg text-neutral-600 mb-6 leading-relaxed font-sans">
-              Dr. Aparna Nath is an Ayurvedic clinician and academic specializing in Prasuthi & Streeroga (women’s health). She combines classical Ayurvedic principles with modern clinical insights to provide evidence-informed, patient-centered care.
+              With over a decade of dedicated experience in Prasuthi Tantra & Streeroga (Ayurveda Gynaecology & Women’s Health), Dr. Aparna Nath is committed to delivering exceptional Ayurvedic care tailored to women’s unique health needs. She has served as a Specialist Medical Officer in the Government sector and as an Assistant Professor at reputed Ayurveda institutions across India, reflecting a strong foundation in both clinical practice and academics.
             </p>
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed font-sans">
-              With experience across public healthcare, medical education, and clinical practice, she has served as a Specialist Medical Officer, Assistant Professor, and Chief Consultant. Her expertise supports women’s health at every stage of life.
+              Dedicated to compassionate, personalized, and evidence-informed care, she supports women through every stage of life, promoting long-term health and well-being through the principles of Ayurveda.
             </p>
 
 
