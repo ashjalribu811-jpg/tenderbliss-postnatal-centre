@@ -44,7 +44,7 @@ const PACKAGES = [
       " Includes stay for 2 bystanders",
       "Fully air-conditioned rooms",
       "XL Smart TV with integrated  OTT platforms  and Fridge",
-      "Luxury bedding & recliner for mother",
+      "Luxury bedding for mother",
       "Modern attached bathrooms with hot water",
       
     ],
