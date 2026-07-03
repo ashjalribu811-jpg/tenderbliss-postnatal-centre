@@ -63,7 +63,7 @@ export const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", hasDropdown: true },
-    { name: "Moments", href: "/moments" },
+    // { name: "Moments", href: "/moments" },
     { name: "Packages", href: "/packages" },
     { name: "Contact Us", href: "/contact" },
   ];

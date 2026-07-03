@@ -30,7 +30,7 @@ export const Footer = () => {
             <h4 className="font-sans text-xl font-bold text-neutral-900 mb-4">Quick Links</h4>
             <div className="flex flex-col items-center md:items-start gap-3 text-base">
               <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Home</Link>
-              <Link to="/moments" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</Link>
+              {/* <Link to="/moments" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Moments</Link> */}
               <Link to="/packages" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Packages</Link>
               <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="text-neutral-500 hover:text-primary-300 transition-colors py-0">Contact Us</Link>
             </div>

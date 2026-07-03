@@ -1,6 +1,6 @@
 import { SEO } from '../components/ui/SEO';
 import { Testimonials } from '../components/sections/Testimonials';
-import { CenterGallery } from '../components/sections/CenterGallery';
+// import { CenterGallery } from '../components/sections/CenterGallery';
 
 export const MomentsPage = () => {
   return (
@@ -11,10 +11,11 @@ export const MomentsPage = () => {
       />
       <h1 className="sr-only">TenderBliss Moments: Gallery and Testimonials</h1>
       {/* Gallery Section - First */}
-      <CenterGallery />
+      {/* <CenterGallery /> */}
 
       {/* Patient Stories Section - Below */}
       <Testimonials />
     </main>
   );
 };
+
