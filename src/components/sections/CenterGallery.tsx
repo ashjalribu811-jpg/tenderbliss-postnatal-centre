@@ -1,42 +1,42 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
-import img1 from "../../assets/gallery/1.jpg.jpeg";
-import img2 from "../../assets/gallery/2.jpg.jpeg";
-import img3 from "../../assets/gallery/3.jpg.jpeg";
-import img4 from "../../assets/gallery/4.jpg.jpeg";
-import img5 from "../../assets/gallery/5.jpg.jpeg";
-import img6 from "../../assets/gallery/6.jpg.jpeg";
+import img1 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.14.08 PM.jpeg";
+import img2 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.36 PM.jpeg";
+import img3 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.57 PM.jpeg";
+import img4 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.09 PM.jpeg";
+import img5 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.19 PM.jpeg";
+import img6 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.41.35 PM.jpeg";
 
 const IMAGES = [
   {
     src: img6,
     alt: "Premium Care Suite",
-    title: "Premium Care Suite",
+    title: "Living Rooms",
     subtitle: "Experience luxury and comfort during your stay."
   },
   {
     src: img4,
     alt: "Modern Facility",
-    title: "Modern Facility",
+    title: "Modern Kitchen",
     subtitle: "State-of-the-art infrastructure for maternal health."
   },
   {
     src: img2,
     alt: "Sanctuary Rooms",
-    title: "Sanctuary Rooms",
+    title: "Dining Hall",
     subtitle: "Private, serene environments for recovery."
   },
   {
     src: img1,
     alt: "Holistic Wellness",
-    title: "Holistic Wellness",
+    title: "Premium Hall",
     subtitle: "A complete approach to prenatal and postnatal care."
   },
   {
     src: img3,
     alt: "Family & Comfort",
-    title: "Family & Comfort",
+    title: "Premium Care Suite",
     subtitle: "Thoughtfully designed spaces for you and your loved ones."
   },
   {
