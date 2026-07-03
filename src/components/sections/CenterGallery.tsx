@@ -1,50 +1,53 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
-import img1 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.14.08 PM.jpeg";
+import img1 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.41.35 PM.jpeg";
 import img2 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.36 PM.jpeg";
 import img3 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.57 PM.jpeg";
 import img4 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.09 PM.jpeg";
 import img5 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.19 PM.jpeg";
-import img6 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.41.35 PM.jpeg";
+import img6 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.14.08 PM.jpeg";
+
 
 const IMAGES = [
-  {
-    src: img6,
-    alt: "Premium Care Suite",
-    title: "Living Rooms",
-    subtitle: "Experience luxury and comfort during your stay."
-  },
-  {
-    src: img4,
-    alt: "Modern Facility",
-    title: "Modern Kitchen",
-    subtitle: "State-of-the-art infrastructure for maternal health."
-  },
-  {
-    src: img2,
-    alt: "Sanctuary Rooms",
-    title: "Dining Hall",
-    subtitle: "Private, serene environments for recovery."
-  },
-  {
-    src: img1,
-    alt: "Holistic Wellness",
-    title: "Premium Hall",
-    subtitle: "A complete approach to prenatal and postnatal care."
-  },
-  {
-    src: img3,
-    alt: "Family & Comfort",
-    title: "Premium Care Suite",
-    subtitle: "Thoughtfully designed spaces for you and your loved ones."
-  },
-  {
+    {
     src: img5,
     alt: "Safe Arrival",
     title: "Safe Arrival",
     subtitle: "The perfect environment for your new beginning."
-  }
+  },
+    {
+    src: img3,
+    alt: "Premium Care Suite",
+    title: "Premium Care Suite",
+    subtitle: "Experience luxury, privacy, and comfort during your recovery."
+  },
+
+  {
+    src: img6,
+    alt: "Living Rooms",
+    title: "Living Rooms",
+    subtitle: "Thoughtfully designed spaces for you and your loved ones."
+  },
+  {
+    src: img4,
+    alt: "Modern Kitchen",
+    title: "Modern Kitchen",
+    subtitle: "Hygienic facilities for preparing fresh, nutritious meals."
+  },
+  {
+    src: img2,
+    alt: "Dining Hall",
+    title: "Dining Hall",
+    subtitle: "Dedicated spaces for mindful nutrition and family dining."
+  },
+  {
+    src: img1,
+    alt: "Premium Hall",
+    title: "Premium Hall",
+    subtitle: "Elegant reception and lounge areas to welcome visitors."
+  },
+
 ];
 
 export const CenterGallery = () => {
