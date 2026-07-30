@@ -6,7 +6,7 @@ import { Footer } from './components/layout/Footer';
 import { Home } from './pages/Home';
 import { AboutPage } from './pages/AboutPage';
 import { DoctorsPage } from './pages/DoctorsPage';
-// import { MomentsPage } from './pages/MomentsPage';
+import { MomentsPage } from './pages/MomentsPage';
 import { ServiceDetail } from './pages/ServiceDetail';
 import { ServiceCategoryPage } from './pages/ServiceCategoryPage';
 import { ContactPage } from './pages/ContactPage';
@@ -26,7 +26,7 @@ const AnimatedRoutes = () => {
         <Route path="/packages" element={<PackagesPage />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
         <Route path="/services/category/:categorySlug" element={<ServiceCategoryPage />} />
-        <Route path="/moments" element={<Navigate to="/" replace />} />
+        <Route path="/moments" element={<MomentsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </AnimatePresence>

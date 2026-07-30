@@ -1,28 +1,53 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
-import img1 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.41.35 PM.jpeg";
-import img2 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.36 PM.jpeg";
-import img3 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.15.57 PM.jpeg";
-import img4 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.09 PM.jpeg";
-import img5 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.16.19 PM.jpeg";
-import img6 from "../../assets/gallery/WhatsApp Image 2026-07-03 at 8.14.08 PM.jpeg";
-
+import img1 from "../../assets/gallery/1.jpeg";
+import img2 from "../../assets/gallery/2.jpeg";
+import img3 from "../../assets/gallery/3.jpeg";
+import img4 from "../../assets/gallery/4.jpeg";
+import img5 from "../../assets/gallery/5.jpeg";
+import img6 from "../../assets/gallery/6.jpeg";
+import img7 from "../../assets/gallery/7.jpeg";
+import img8 from "../../assets/gallery/8.jpeg";
+import img9 from "../../assets/gallery/9.jpeg";
+import img10 from "../../assets/gallery/10.jpeg";
+import img11 from "../../assets/gallery/11.jpeg";
+import img12 from "../../assets/gallery/12.jpeg";
+import img13 from "../../assets/gallery/13.jpeg";
+import img14 from "../../assets/gallery/14.jpeg";
+import img15 from "../../assets/gallery/15.jpeg";
 
 const IMAGES = [
-    {
-    src: img5,
-    alt: "Safe Arrival",
-    title: "Safe Arrival",
-    subtitle: "The perfect environment for your new beginning."
+  {
+    src: img1,
+    alt: "Exterior View",
+    title: "Exterior View",
+    subtitle: "Welcome to TenderBliss Postnatal Centre."
   },
-    {
+  {
+    src: img2,
+    alt: "Serene Environment",
+    title: "Serene Environment",
+    subtitle: "A calming space designed for your peace of mind."
+  },
+  {
     src: img3,
     alt: "Premium Care Suite",
     title: "Premium Care Suite",
     subtitle: "Experience luxury, privacy, and comfort during your recovery."
   },
-
+  {
+    src: img4,
+    alt: "Modern Facilities",
+    title: "Modern Facilities",
+    subtitle: "Equipped with everything you need for a comfortable stay."
+  },
+  {
+    src: img5,
+    alt: "Relaxing Atmosphere",
+    title: "Relaxing Atmosphere",
+    subtitle: "Rest and recover in a peaceful and nurturing setting."
+  },
   {
     src: img6,
     alt: "Living Rooms",
@@ -30,24 +55,59 @@ const IMAGES = [
     subtitle: "Thoughtfully designed spaces for you and your loved ones."
   },
   {
-    src: img4,
-    alt: "Modern Kitchen",
-    title: "Modern Kitchen",
-    subtitle: "Hygienic facilities for preparing fresh, nutritious meals."
+    src: img7,
+    alt: "Hygienic Environment",
+    title: "Hygienic Environment",
+    subtitle: "Maintained to the highest standards of cleanliness."
   },
   {
-    src: img2,
-    alt: "Dining Hall",
-    title: "Dining Hall",
-    subtitle: "Dedicated spaces for mindful nutrition and family dining."
+    src: img8,
+    alt: "Dedicated Support Spaces",
+    title: "Dedicated Support Spaces",
+    subtitle: "Spaces created with your care and well-being in mind."
   },
   {
-    src: img1,
-    alt: "Premium Hall",
-    title: "Premium Hall",
-    subtitle: "Elegant reception and lounge areas to welcome visitors."
+    src: img9,
+    alt: "Welcoming Reception",
+    title: "Welcoming Reception",
+    subtitle: "Feel at home from the moment you arrive."
   },
-
+  {
+    src: img10,
+    alt: "Peaceful Recovery",
+    title: "Peaceful Recovery",
+    subtitle: "Your personal sanctuary for postnatal healing."
+  },
+  {
+    src: img11,
+    alt: "Nurturing Space",
+    title: "Nurturing Space",
+    subtitle: "Carefully designed to support new mothers."
+  },
+  {
+    src: img12,
+    alt: "Thoughtful Design",
+    title: "Thoughtful Design",
+    subtitle: "Every detail crafted for your utmost wellbeing."
+  },
+  {
+    src: img13,
+    alt: "Family Comfort",
+    title: "Family Comfort",
+    subtitle: "A welcoming and comfortable place for your loved ones."
+  },
+  {
+    src: img14,
+    alt: "Quality Care",
+    title: "Quality Care",
+    subtitle: "Premium settings for our specialized premium services."
+  },
+  {
+    src: img15,
+    alt: "Tranquil Setting",
+    title: "Tranquil Setting",
+    subtitle: "Find your calm and focus on your new beginning."
+  }
 ];
 
 export const CenterGallery = () => {
