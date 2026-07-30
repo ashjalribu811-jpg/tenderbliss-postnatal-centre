@@ -18,6 +18,7 @@ import img14 from "../../assets/gallery/14.jpeg";
 import img15 from "../../assets/gallery/15.jpeg";
 
 const IMAGES = [
+  /*
    {
     src: img5,
     alt: "Relaxing Atmosphere",
@@ -42,19 +43,27 @@ const IMAGES = [
     title: "Exterior View",
     subtitle: "Welcome to TenderBliss Postnatal Centre."
   },
-  {
-    src: img2,
-    alt: "Serene Environment",
-    title: "Serene Environment",
-    subtitle: "A calming space designed for your peace of mind."
+  */
+   {
+    src: img14,
+    alt: "Quality Care",
+    title: "Premium",
+    subtitle: "Premium settings for our specialized premium services."
   },
- 
-  {
+    {
+    src: img10,
+    alt: "Premium Bedroom",
+    title: "Premium Bedroom",
+    subtitle: "Your personal sanctuary for postnatal healing."
+  },
+    {
     src: img4,
     alt: "Modern Facilities",
-    title: "Modern Facilities",
+    title: "Therapy Area",
     subtitle: "Equipped with everything you need for a comfortable stay."
   },
+
+
  
   {
     src: img6,
@@ -62,56 +71,60 @@ const IMAGES = [
     title: "Living Rooms",
     subtitle: "Thoughtfully designed spaces for you and your loved ones."
   },
+  /*
   {
     src: img7,
     alt: "Hygienic Environment",
     title: "Hygienic Environment",
     subtitle: "Maintained to the highest standards of cleanliness."
   },
+  */
   {
     src: img8,
     alt: "Dedicated Support Spaces",
-    title: "Dedicated Support Spaces",
+    title: "Normal Bedroom",
     subtitle: "Spaces created with your care and well-being in mind."
   },
+    {
+    src: img2,
+    alt: "Serene Environment",
+    title: "Kitchen",
+    subtitle: "A calming space designed for your peace of mind."
+  },
+ 
+  /*
   {
     src: img9,
     alt: "Welcoming Reception",
     title: "Welcoming Reception",
     subtitle: "Feel at home from the moment you arrive."
   },
-  {
-    src: img10,
-    alt: "Peaceful Recovery",
-    title: "Peaceful Recovery",
-    subtitle: "Your personal sanctuary for postnatal healing."
-  },
+  */
+
+  /*
   {
     src: img11,
     alt: "Nurturing Space",
     title: "Nurturing Space",
     subtitle: "Carefully designed to support new mothers."
   },
-  {
-    src: img12,
-    alt: "Thoughtful Design",
-    title: "Thoughtful Design",
-    subtitle: "Every detail crafted for your utmost wellbeing."
-  },
+  */
+  // {
+  //   src: img12,
+  //   alt: "Thoughtful Design",
+  //   title: "Normal Living Area",
+  //   subtitle: "Every detail crafted for your utmost wellbeing."
+  // },
   
-  {
-    src: img14,
-    alt: "Quality Care",
-    title: "Quality Care",
-    subtitle: "Premium settings for our specialized premium services."
-  },
+
+  /*
    {
     src: img3,
     alt: "Premium Care Suite",
     title: "Premium Care Suite",
     subtitle: "Experience luxury, privacy, and comfort during your recovery."
   },
- 
+  */
 ];
 
 export const CenterGallery = () => {
@@ -154,7 +167,7 @@ export const CenterGallery = () => {
                 {/* Captions */}
                 <div className="absolute inset-0 p-10 flex flex-col justify-end">
                   <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                    <h3 className="text-[1.75rem] text-white font-bold mb-2">
+                    <h3 className="text-[1.75rem] text-white font-bold mb-2" style={{ fontFamily: "'Burgundia', 'Playfair Display', serif" }}>
                       {image.title}
                     </h3>
                     <p className="text-white/80 text-[0.9rem] font-medium leading-relaxed max-w-[280px] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
