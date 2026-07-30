@@ -6,13 +6,13 @@ import img2 from "../../assets/gallery/2.jpeg";
 // import img3 from "../../assets/gallery/3.jpeg";
 import img4 from "../../assets/gallery/4.jpeg";
 // import img5 from "../../assets/gallery/5.jpeg";
-import img6 from "../../assets/gallery/6.jpeg";
+// import img6 from "../../assets/gallery/6.jpeg";
 // import img7 from "../../assets/gallery/7.jpeg";
 import img8 from "../../assets/gallery/8.jpeg";
 // import img9 from "../../assets/gallery/9.jpeg";
 import img10 from "../../assets/gallery/10.jpeg";
 // import img11 from "../../assets/gallery/11.jpeg";
-// import img12 from "../../assets/gallery/12.jpeg";
+import img12 from "../../assets/gallery/12.jpeg";
 // import img13 from "../../assets/gallery/13.jpeg";
 import img14 from "../../assets/gallery/14.jpeg";
 // import img15 from "../../assets/gallery/15.jpeg";
@@ -65,12 +65,12 @@ const IMAGES = [
 
 
  
-  {
-    src: img6,
-    alt: "Living Rooms",
-    title: "Living Rooms",
-    subtitle: "Thoughtfully designed spaces for you and your loved ones."
-  },
+  // {
+  //   src: img6,
+  //   alt: "Living Rooms",
+  //   title: "Living Rooms",
+  //   subtitle: "Thoughtfully designed spaces for you and your loved ones."
+  // },
   /*
   {
     src: img7,
@@ -80,12 +80,18 @@ const IMAGES = [
   },
   */
   {
+    src: img12,
+    alt: "Thoughtful Design",
+    title: "Normal Living Area",
+    subtitle: "Every detail crafted for your utmost wellbeing."
+  },
+  {
     src: img8,
     alt: "Dedicated Support Spaces",
     title: "Normal Bedroom",
     subtitle: "Spaces created with your care and well-being in mind."
   },
-    {
+  {
     src: img2,
     alt: "Serene Environment",
     title: "Kitchen",
@@ -109,12 +115,7 @@ const IMAGES = [
     subtitle: "Carefully designed to support new mothers."
   },
   */
-  // {
-  //   src: img12,
-  //   alt: "Thoughtful Design",
-  //   title: "Normal Living Area",
-  //   subtitle: "Every detail crafted for your utmost wellbeing."
-  // },
+
   
 
   /*
