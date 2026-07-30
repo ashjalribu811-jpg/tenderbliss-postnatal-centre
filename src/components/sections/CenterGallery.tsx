@@ -18,6 +18,24 @@ import img14 from "../../assets/gallery/14.jpeg";
 import img15 from "../../assets/gallery/15.jpeg";
 
 const IMAGES = [
+   {
+    src: img5,
+    alt: "Relaxing Atmosphere",
+    title: "Relaxing Atmosphere",
+    subtitle: "Rest and recover in a peaceful and nurturing setting."
+  },
+  {
+    src: img13,
+    alt: "Family Comfort",
+    title: "Family Comfort",
+    subtitle: "A welcoming and comfortable place for your loved ones."
+  },
+   {
+    src: img15,
+    alt: "Tranquil Setting",
+    title: "Tranquil Setting",
+    subtitle: "Find your calm and focus on your new beginning."
+  },
   {
     src: img1,
     alt: "Exterior View",
@@ -30,24 +48,14 @@ const IMAGES = [
     title: "Serene Environment",
     subtitle: "A calming space designed for your peace of mind."
   },
-  {
-    src: img3,
-    alt: "Premium Care Suite",
-    title: "Premium Care Suite",
-    subtitle: "Experience luxury, privacy, and comfort during your recovery."
-  },
+ 
   {
     src: img4,
     alt: "Modern Facilities",
     title: "Modern Facilities",
     subtitle: "Equipped with everything you need for a comfortable stay."
   },
-  {
-    src: img5,
-    alt: "Relaxing Atmosphere",
-    title: "Relaxing Atmosphere",
-    subtitle: "Rest and recover in a peaceful and nurturing setting."
-  },
+ 
   {
     src: img6,
     alt: "Living Rooms",
@@ -90,24 +98,20 @@ const IMAGES = [
     title: "Thoughtful Design",
     subtitle: "Every detail crafted for your utmost wellbeing."
   },
-  {
-    src: img13,
-    alt: "Family Comfort",
-    title: "Family Comfort",
-    subtitle: "A welcoming and comfortable place for your loved ones."
-  },
+  
   {
     src: img14,
     alt: "Quality Care",
     title: "Quality Care",
     subtitle: "Premium settings for our specialized premium services."
   },
-  {
-    src: img15,
-    alt: "Tranquil Setting",
-    title: "Tranquil Setting",
-    subtitle: "Find your calm and focus on your new beginning."
-  }
+   {
+    src: img3,
+    alt: "Premium Care Suite",
+    title: "Premium Care Suite",
+    subtitle: "Experience luxury, privacy, and comfort during your recovery."
+  },
+ 
 ];
 
 export const CenterGallery = () => {
